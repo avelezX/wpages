@@ -6,35 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xerentity - Repositorio Temporal</title>
     <style>
-        /* Estilo para posicionar la imagen en la esquina superior derecha */
+        /* Estilo para posicionar la imagen en la esquina inferior derecha */
         img {
             position: absolute;
-            top: 10px;
+            bottom: 10px;
             right: 10px;
-            max-width: 100px; /* Ajusta el ancho máximo según sea necesario */
+            max-width: 200px; /* Ajusta el ancho máximo según sea necesario */
             height: auto; /* Mantiene la proporción de la imagen */
+            border: 2px solid #001f3f; /* Border color dark blue */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Estilo para el título */
+        h1 {
+            background-color: #001f3f; /* Dark blue background */
+            color: #ffffff; /* White text */
+            padding: 20px; /* Padding around the title */
+            border-radius: 5px; /* Rounded corners */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            display: inline-block; /* Make links display as blocks */
+            background-color: #001f3f; /* Dark blue background */
+            color: #ffffff; /* White text */
+            padding: 10px 20px; /* Padding around the links */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            margin: 10px 0; /* Add space between links */
+        }
+
+        /* Estilo para cinta lateral y contenido */
+        .content {
+            margin-top: 50px; /* Add space between ribbon and content */
+            padding: 20px; /* Padding around the content */
+        }
+
+        /* Estilo para el comentario inicial */
+        .initial-comment {
+            background-color: #f2f2f2; /* Light gray background */
+            padding: 20px; /* Padding around the comment */
+            border-radius: 5px; /* Rounded corners */
+            margin-bottom: 20px; /* Add space between comment and content */
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Cinta lateral -->
+    <div class="ribbon"></div>
+
+    <!-- Comentario Inicial -->
+    <div class="initial-comment">
+ 
+    </div>
+
+    <!-- Título estilizado -->
+    <h1>Xerentity - Repositorio Temporal</h1>
+
+    <!-- Contenido -->
+    <div class="content">
+               <p>Acá podrás encontrar las gráficas de inflación. En ella puedes ver los datos históricos reportados por el Dane, y para las fechas futuras está calculado lo que se llama la inflación implícita. Esta se calcula usando los precios de mercado de los títulos de tesorería de gobierno de Colombia (TES) indexados en UVR y los títulos en COP. Para el cálculo de esta se usó bootstraping y con curva cero cupones.</p>
+        <p>Esta es la mejor forma de predecir la inflación, pues el mercado tiene toda la información disponible sobre los precios actuales.</p>
+        <p>Podrán encontrar un link en donde ven la gráfica de inflación anual y mensual. También está un archivo .cvs son la serie de datos.</p>
+
+
+        <!-- Link al archivo total_cpi_yoy_plot.html -->
+        <a href="total_cpi_yoy_plot.html" target="_blank">Gráfico Total IPC AoA-Dinamico</a>
+
+        <br>
+
+        <!-- Link a otro archivo generado por Plotly -->
+        <a href="otro_grafico.html" target="_blank">Gráfico Total IPC MoM-Dinamico</a>
+
+    </div>
+
     <!-- Agrega el logo de la empresa -->
-    <img src="691541A6-EC2B-4206-AC7E-F6963BEB20C0_1_105_c.jpeg" alt="Logo de Xerentity">
-
-    <h1>Bienvenido al Repositorio Temporal de Xerentity</h1>
-
-    <p>Este repositorio es utilizado por Xerentity, una empresa especializada en soluciones de gestión de datos para riesgos.</p>
-
-    <!-- Link al archivo total_cpi_yoy_plot.html -->
-    <a href="total_cpi_yoy_plot.html" target="_blank">Ver Gráfico Total CPI YoY</a>
-
-    <br>
-
-    <!-- Link a otro archivo generado por Plotly -->
-    <a href="otro_grafico.html" target="_blank">Ver Otro Gráfico</a>
+    <img src="nombre_del_logo.jpg" alt="Logo de Xerentity">
 
 </body>
 
 </html>
+
+
+
+
+
 
