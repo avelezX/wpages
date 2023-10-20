@@ -8,9 +8,6 @@
     <style>
         /* Estilo para posicionar la imagen en la esquina inferior derecha */
         img {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
             max-width: 200px; /* Ajusta el ancho máximo según sea necesario */
             height: auto; /* Mantiene la proporción de la imagen */
             border: 2px solid #001f3f; /* Border color dark blue */
@@ -50,6 +47,18 @@
             border-radius: 5px; /* Rounded corners */
             margin-bottom: 20px; /* Add space between comment and content */
         }
+
+        /* Estilo para posicionar las imágenes en el centro */
+        .image-container {
+            text-align: center;
+        }
+
+        /* Estilo para posicionar el logo en la esquina inferior derecha */
+        .logo-container {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
     </style>
 </head>
 
@@ -68,40 +77,42 @@
 
     <!-- Contenido -->
     <div class="content">
-               <p>Acá podrás encontrar las gráficas de inflación. En ella puedes ver los datos históricos reportados por el Dane, y para las fechas futuras está calculado lo que se llama la inflación implícita. Esta se calcula usando los precios de mercado de los títulos de tesorería de gobierno de Colombia (TES) indexados en UVR y los títulos en COP. Para el cálculo de esta se usó bootstraping y con curva cero cupones.</p>
+        <p>Acá podrás encontrar las gráficas de inflación. En ella puedes ver los datos históricos reportados por el Dane, y para las fechas futuras está calculado lo que se llama la inflación implícita. Esta se calcula usando los precios de mercado de los títulos de tesorería de gobierno de Colombia (TES) indexados en UVR y los títulos en COP. Para el cálculo de esta se usó bootstraping y con curva cero cupones.</p>
         <p>Esta es la mejor forma de predecir la inflación, pues el mercado tiene toda la información disponible sobre los precios actuales.</p>
         <p>Podrán encontrar un link en donde ven la gráfica de inflación anual y mensual. También está un archivo .cvs son la serie de datos.</p>
 
-
         <!-- Link al archivo total_cpi_yoy_plot.html -->
         <a href="total_cpi_mom_plot.html" target="_blank">Gráfico Total IPC AoA-Dinamico</a>
-
         <br>
 
         <!-- Link a otro archivo generado por Plotly -->
         <a href="total_cpi_yoy_plot.html" target="_blank">Gráfico Total IPC MoM-Dinamico</a>
+        <br>
 
+        <!-- Link a archivo CVS 1 -->
+        <a href="total_cpi_yoy_data.csv" download>Descargar Archivo- Inflacion Anual</a>
+        <br>
+
+        <!-- Link a archivo CVS 2 -->
+        <a href="total_cpi_mom_data.csv" download>Descargar Archivo- Inflacion Mensual</a>
     </div>
 
-    <!-- Agrega el logo de la empresa -->
-    <img src="691541A6-EC2B-4206-AC7E-F6963BEB20C0_1_105_c.jpeg" alt="Logo de Xerentity">
+    <!-- Contenedor para las imágenes centradas -->
+    <div class="image-container">
+        <!-- Agrega imagen -->
+        <img src="total_cpi_yoy.jpg" alt="Inflacion AaA" style="max-width: 200px; height: auto; border: 2px solid #001f3f; border-radius: 5px;">
+        <br>
 
+        <!-- Agrega otra imagen -->
+        <img src="total_cpi_MoM.jpg" alt="Inflacion MaM" style="max-width: 200px; height: auto; border: 2px solid #001f3f; border-radius: 5px;">
+    </div>
+
+    <!-- Contenedor para el logo en la esquina inferior derecha -->
+    <div class="logo-container">
+        <!-- Agrega el logo de la empresa -->
+        <img src="691541A6-EC2B-4206-AC7E-F6963BEB20C0_1_105_c.jpeg" alt="Logo de Xerentity">
+    </div>
 </body>
-
-<!-- Agrega el logo de la empresa -->
-<img src="total_cpi_yoy.jpg" alt="Inflacion AaA" style="position: absolute; top: 10px; right: 10px; max-width: 200px; height: auto; border: 2px solid #001f3f; border-radius: 5px;">
-
-<!-- Agrega otra imagen -->
-<img src="total_cpi_MoM.jpg" alt="Inflacion MaM" style="position: absolute; top: 10px; right: 220px; max-width: 200px; height: auto; border: 2px solid #001f3f; border-radius: 5px;">
-
-    <!-- Link a archivo CVS 1 -->
-    <a href="total_cpi_yoy_data.csv" download>Descargar Archivo- Inflacion Anual</a>
-    <br>
-
-    <!-- Link a archivo CVS 2 -->
-    <a href="total_cpi_mom_data.csv" download>Descargar Archivo- Inflacion Mensual</a>
-    <br>
-
 
 </html>
 
