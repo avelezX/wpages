@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xerentity - Repositorio Temporal</title>
+    <style>
+        /* Estilo para posicionar la imagen en la esquina inferior derecha */
+        img {
+            max-width: 200px; /* Ajusta el ancho máximo según sea necesario */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border: 2px solid #001f3f; /* Border color dark blue */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Estilo para el título */
+        h1 {
+            background-color: #001f3f; /* Dark blue background */
+            color: #ffffff; /* White text */
+            padding: 20px; /* Padding around the title */
+            border-radius: 5px; /* Rounded corners */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            display: inline-block; /* Make links display as blocks */
+            background-color: #001f3f; /* Dark blue background */
+            color: #ffffff; /* White text */
+            padding: 10px 20px; /* Padding around the links */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            margin: 10px 0; /* Add space between links */
+        }
+
+        /* Estilo para cinta lateral y contenido */
+        .content {
+            margin-top: 50px; /* Add space between ribbon and content */
+            padding: 20px; /* Padding around the content */
+        }
+
+        /* Estilo para el comentario inicial */
+        .initial-comment {
+            background-color: #f2f2f2; /* Light gray background */
+            padding: 20px; /* Padding around the comment */
+            border-radius: 5px; /* Rounded corners */
+            margin-bottom: 20px; /* Add space between comment and content */
+        }
+
+        /* Estilo para posicionar las imágenes en el centro */
+        .image-container {
+            text-align: center;
+        }
+
+        /* Estilo para posicionar el logo en la esquina inferior derecha */
+        .logo-container {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cinta lateral -->
+    <div class="ribbon"></div>
+
+    <!-- Comentario Inicial -->
+    <div class="initial-comment">
+ 
+    </div>
+
+    <!-- Título estilizado -->
+    <h1>Xerentity - Repositorio Temporal</h1>
+
+    <!-- Contenido -->
+    <div class="content">
+        <p>En esta página podrán encontrar las tasas históricas de IBR (overnight, es decir, diaria) y las tasas implícitas que el mercado de swaps IBR está descontando (tasas implícitas).</p>
+        <p>También encontrarán las series de datos del Banco de la República para los créditos de vivienda nueva VIS y no VIS.</p>
+        <p>La estimación de las tasas de ese crédito de vivienda está hecha basándose en el movimiento implícito en las tasas de los SWAP + un spread histórico.</p>
+        
+
+        <!-- Link al archivo total_cpi_yoy_plot.html -->
+        <a href="Ibr-on VIS.html" target="_blank">Gráfico IBR con tasas VIS-Dinamico</a>
+        <br>
+
+        <!-- Link a otro archivo generado por Plotly -->
+        <a href="Ibr-on.html" target="_blank">Gráfico IBR tasa no VIS-Dinamico</a>
+        <br>
+
+
+        <!-- Link a archivo CVS 1 -->
+        <a href="credito_vivienda_vis_ea_historica.csv" download>Descargar Archivo- credito_vivienda_vis_ea_historica/a>
+        <br>
+
+        <!-- Link a archivo CVS 2 -->
+        <a href="credito_vivienda_vis_ea_implicita.csv" download>Descargar Archivo- credito_vivienda_vis_ea_implicita.</a>
+
+        <!-- Link a archivo CVS 2 -->
+        <a href="credito_vivienda_no_vis_ea_historica.csv" download>Descargar Archivo- credito_vivienda_no_vis_ea_historica.</a>
+        
+        <!-- Link a archivo CVS 2 -->
+        <a href="credito_vivienda_no_vis_ea_implicita.csv" download>Descargar Archivo- credito_vivienda_no_vis_ea_implicita.</a>
+
+
+    </div>
+
+    <!-- Contenedor para las imágenes centradas -->
+    <div class="image-container">
+        <!-- Agrega imagen -->
+        <img src="total_cpi_yoy_image.jpg" alt="Inflacion Anual" style="max-width: 700px; height: auto ; ">
+        <br>
+
+        <!-- Agrega otra imagen -->
+        <img src="total_cpi_mom_image.jpg" alt="Inflacion MaM" style="max-width: 700px; height: auto; ">
+
+         <!-- Agrega otra imagen -->
+         <img src="uvr_image.jpg" alt="Valor UVR" style="max-width: 700px; height: auto; ">
+
+
+    </div>
+
+    <!-- Contenedor para el logo en la esquina inferior derecha -->
+    <div class="logo-container">
+        <!-- Agrega el logo de la empresa -->
+        <img src="Logo_xerenity.jpeg" alt="Logo de Xerentity">
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
